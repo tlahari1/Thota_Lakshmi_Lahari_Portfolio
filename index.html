@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gandeed Ramesh | Data Science, Machine Learning, Analytics Portfolio" />
+  <title>Thota Lakshmi Lahari | Data Science Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo"><span class="logo-bracket">&lt;</span>TLL<span class="logo-bracket">/&gt;</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#training" class="nav-link">Training</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Open to Internship and Full-Time opportunities</div>
+      <h1 class="hero-name">
+        <span class="name-line">Thota </span>
+        <span class="name-line italic">Lakshmi Lahari</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-rotator">Data Science Engineer</span>
+      </div>
+      <p class="hero-tagline">
+         Building intelligent insights from data —<br>
+         combining analytics, machine learning, and problem-solving.
+     </p>
+      <div class="hero-cta">
+        <a href="G_Ramesh_CV.pdf" class="btn btn-primary" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/tlahari1" target="_blank" class="social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="http://www.linkedin.com/in/lahari979" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:lahari97723@gmail.com" class="social-icon" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="photo-ring"></div>
+      <div class="photo-ring ring2"></div>
+      <div class="hero-photo">
+        <img src="photo.jpeg" alt="T Lahari" style="width:100%; height:100%; object-fit:cover; object-position: center 45%;" />
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">A curious and structured Computer Science undergraduate at LPU, building end-to-end data science solutions that drive real business impact.</p>
+          <p>I specialise in Python-based machine learning, predictive analytics, and business intelligence — from wrangling 10,000+ row HR datasets to segmenting retail customers with unsupervised ML. I thrive on turning messy, raw data into clear, strategic insights.</p>
+          <p>Beyond the keyboard, I'm an innovator at heart — having filed an IPR patent for a kinetic energy–harvesting earbud system and placed 2nd at a competitive AI hackathon. I actively seek roles where curiosity-driven learning meets structured execution.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-lbl">Projects</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-lbl">Certifications</span></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Class X Score</span></div>
+          </div>
+        </div>
+        <div class="about-card-stack">
+          <div class="info-card"><div class="info-icon">🎓</div><div><strong>B.Tech CSE</strong><span>Lovely Professional University — Since Aug 2023</span></div></div>
+          <div class="info-card"><div class="info-icon">📍</div><div><strong>Location</strong><span>Phagwara, Punjab, India</span></div></div>
+          <div class="info-card"><div class="info-icon">💼</div><div><strong>Seeking</strong><span>Data Science / ML / Analytics Roles</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">⌨️</span> Programming &amp; CS Fundamentals</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-5">Python</span>
+            <span class="skill-tag level-4">SQL</span>
+            <span class="skill-tag level-4">C</span>
+            <span class="skill-tag level-4">Java</span>
+            <span class="skill-tag level-4">DSA</span>
+            <span class="skill-tag level-3">Operating Systems</span>
+            <span class="skill-tag level-3">Computer Networking</span>
+            <span class="skill-tag level-3">Computer Architecture</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">📦</span> Tools &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-5">Pandas</span>
+            <span class="skill-tag level-5">NumPy</span>
+            <span class="skill-tag level-4">Scikit-learn</span>
+            <span class="skill-tag level-4">Matplotlib</span>
+            <span class="skill-tag level-4">Seaborn</span>
+            <span class="skill-tag level-4">Excel</span>
+            <span class="skill-tag level-4">Power BI</span>
+            <span class="skill-tag level-4">Git / GitHub</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🧠</span> Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-5">Regression</span>
+            <span class="skill-tag level-5">Classification</span>
+            <span class="skill-tag level-4">Clustering</span>
+            <span class="skill-tag level-4">PCA</span>
+            <span class="skill-tag level-4">Neural Networks</span>
+            <span class="skill-tag level-4">Model Evaluation</span>
+            <span class="skill-tag level-3">Ensemble Methods</span>
+            <span class="skill-tag level-3">Feature Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🤝</span> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag level-5">Problem Solving</span>
+            <span class="skill-tag level-5">Collaboration</span>
+            <span class="skill-tag level-4">Creativity &amp; Innovation</span>
+            <span class="skill-tag level-4">Independent Execution</span>
+            <span class="skill-tag level-4">Curiosity-Driven Learning</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-legend">
+        <span class="legend-item"><span class="dot level-5"></span>Expert</span>
+        <span class="legend-item"><span class="dot level-4"></span>Advanced</span>
+        <span class="legend-item"><span class="dot level-3"></span>Proficient</span>
+        <span class="legend-item"><span class="dot level-2"></span>Familiar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Experience</span>
+        <h2 class="section-title">Training &amp; Internship</h2>
+      </div>
+      <div class="training-list">
+        <div class="training-card reveal">
+          <div class="training-header">
+            <div>
+              <h3 class="training-org">Lovely Professional University — Data Structures & Algorithms (DSA)</h3>
+              <div class="training-meta">
+                <span class="meta-badge">Jun 2025 – Jul 2025</span>
+                <span class="meta-badge">1 Months</span>
+              </div>
+            </div>
+            <div class="training-logo">LPU</div>
+          </div>
+          <p class="training-desc">Strengthened foundations in core data structures and algorithms, focusing on real world problem solving and optimization.Implemented 100+ algorithmic challenges across arrays, trees, graphs, and DP, enhancing analytical thinking and logic building.Applied complexity analysis to improve algorithm performance and code efficiency in competitive programming environments.</p>
+          <div class="training-tech">
+            <span>Arrays</span><span>Stack</span><span>Queue</span><span>Tree's & Graph's</span><span>Dynamic Programming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-top">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="https://github.com/tlahari1/Customer-Segmentation-for-Retail" target="_blank" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-label">Featured · Apr – Jun 2025</div>
+          <h3 class="project-title">Customer Segmentation for Retail</h3>
+          <p class="project-desc">Built a scalable, end-to-end data pipeline in Python to analyse 2,200+ customer records across 29 features — performing data cleaning, feature engineering, and EDA for retail marketing optimisation. Applied unsupervised ML (PCA + Agglomerative Clustering) to segment customers into four targeted groups based on demographics, spending, and campaign engagement. Generated actionable business recommendations that boosted campaign targeting accuracy by 25%+, supporting data-driven decisions for revenue growth and customer retention.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>PCA</span><span>Agglomerative Clustering</span><span>EDA</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal">
+          <div class="project-top">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="https://github.com/tlahari1/Employee-Attrition-Prediction-HR-Analytics-" target="_blank" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-label">Oct – Dec 2025</div>
+          <h3 class="project-title">Employee Attrition Prediction &amp; HR Analytics</h3>
+          <p class="project-desc">Built a data science solution to predict employee attrition using a real-world HR dataset (10,000+ data points, 10+ features) with Logistic Regression, Decision Tree, and Random Forest in Python. Advanced feature engineering ("overworked" flag, tenure bands) achieved 96% accuracy and 93.8 AUC. Delivered strategic insights to HR leaders for reducing attrition and optimising talent management, promotions, and workload policies.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Logistic Regression</span><span>Random Forest</span><span>EDA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Credentials</span>
+        <h2 class="section-title">Certificates & Certifications</h2>
+      </div>
+      <div class="cert-grid cert-grid-2">
+        <div class="cert-card reveal">
+          <div class="cert-badge"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div class="cert-body">
+            <span class="cert-org">Oracle</span>
+            <h4 class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h4>
+            <div class="cert-footer"><span class="cert-year">Apr 2026</span><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=03A773CA9C4E43A273F87FFC0E839451A43294602E3CDFD30DB0E2904583DACE" class="cert-link">View Credential →</a></div>
+          </div>
+        </div>
+        
+        <div class="cert-card reveal">
+          <div class="cert-badge"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div class="cert-body">
+            <span class="cert-org">Google</span>
+            <h4 class="cert-title">Google Data Analytics Professional Certificate</h4>
+            <div class="cert-footer"><span class="cert-year">Nov 2025</span><a href="https://skillshop.credential.net/661fd55d-9a00-4465-8f52-5427010d24e2?utm_source=whatsapp&utm_medium=social" class="cert-link">View Credential →</a></div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-badge"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div class="cert-body">
+            <span class="cert-org">NPTEL</span>
+            <h4 class="cert-title">Privacy and Security in Online Social Media</h4>
+            <div class="cert-footer"><span class="cert-year">Oct 2025</span><a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs117/Course/NPTEL25CS117S135870171810604208.pdf" class="cert-link">View Credential →</a></div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-badge"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div class="cert-body">
+            <span class="cert-org">HackerRank</span>
+            <h4 class="cert-title">SQL(Advanced)</h4>
+            <div class="cert-footer"><span class="cert-year">Dec 2025</span><a href="https://www.hackerrank.com/certificates/iframe/5b6099173f12" class="cert-link">View Credential →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid single-col">
+        <div class="achievement-card reveal">
+          <div class="ach-icon">★</div>
+          <div class="ach-body">
+            <h4>2nd Place — Binary Bitz Hackathon</h4>
+            <p>Secured 2nd place in the Binary Bitz Hackathon for developing a real-time AI-based coding solution. Competed against strong teams from across the university, demonstrating applied ML under time pressure.</p>
+            <span class="ach-date">Mar 2024</span>
+          </div>
+        </div>
+        
+        <div class="achievement-card reveal">
+          <div class="ach-icon">★</div>
+          <div class="ach-body">
+            <h4>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h4>
+            <p>Earned Oracle's industry-recognised certification in AI — one of the most competitive AI certifications available for early-career professionals.</p>
+            <span class="ach-date">Apr 2026</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Academia</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header"><span class="tl-level">Undergraduate</span><span class="tl-year">Aug 2023 – Present</span></div>
+            <h3 class="tl-school">Lovely Professional University</h3>
+            <p class="tl-degree">B.Tech — Computer Science &amp; Engineering · Phagwara, Punjab</p>
+            <div class="tl-metrics">
+              <div class="tl-metric"><span class="metric-val">6.4</span><span class="metric-lbl">CGPA</span></div>
+              <div class="tl-metric"><span class="metric-val">Ongoing</span><span class="metric-lbl">Status</span></div>
+            </div>
+            <div class="tl-highlights"><span>Machine Learning</span><span>DSA</span><span>DBMS</span><span>OS &amp; Networking</span><span>Python</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header"><span class="tl-level">12th — Intermediate</span><span class="tl-year">May 2021 – May 2023</span></div>
+            <h3 class="tl-school">Vignan Girls Jr. College</h3>
+            <p class="tl-degree">PCM. Guntur, Andhra Pradesh</p>
+            <div class="tl-metrics">
+              <div class="tl-metric"><span class="metric-val">97.9%</span><span class="metric-lbl">Percentage</span></div>
+              <div class="tl-metric"><span class="metric-val">State Board</span><span class="metric-lbl">Board</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header"><span class="tl-level">10th — Matriculation</span><span class="tl-year">Jun 2019 – Jun 2020</span></div>
+            <h3 class="tl-school">Modern High School</h3>
+            <p class="tl-degree">Matriculation · Guntur, Andhra Pradesh</p>
+            <div class="tl-metrics">
+              <div class="tl-metric"><span class="metric-val">97%</span><span class="metric-lbl">Percentage</span></div>
+              <div class="tl-metric"><span class="metric-val">State Board</span><span class="metric-lbl">Board</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Open to Data Science, ML &amp; Analytics opportunities. Let's talk!</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><span class="ci-label">Email</span><a href="mailto:lahari97723@gmail.com">lahari97723@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div><span class="ci-label">Phone</span><a href="tel:+919110753211">+91 9110753211</a></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/tlahari1" target="_blank" class="cs-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              https://github.com/tlahari1
+            </a>
+            <a href="http://www.linkedin.com/in/lahari979" target="_blank" class="cs-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              http://www.linkedin.com/in/lahari979
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label for="cname">Your Name</label><input type="text" id="cname" placeholder="T Lakshmi Lahari" required /></div>
+            <div class="form-group"><label for="cemail">Email Address</label><input type="email" id="cemail" placeholder="lahari97723@gmail.com" required /></div>
+          </div>
+          <div class="form-group"><label for="cphone">Phone Number (Optional)</label><input type="tel" id="cphone" placeholder="+91 9110753211" /></div>
+          <div class="form-group"><label for="cmessage">Your Message</label><textarea id="cmessage" rows="5" placeholder="Hi Lahari, I'd like to discuss an opportunity..." required></textarea></div>
+          <button type="submit" class="btn btn-primary form-btn">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">✓ Message sent! I'll get back to you within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>TLL<span class="logo-bracket">/&gt;</span></div>
+      <p class="footer-copy">Designed &amp; Built by <strong>Thota Lakshmi Lahari</strong> · 2026</p>
+      <p class="footer-sub">Open to Data Science, ML &amp; Analytics roles</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
